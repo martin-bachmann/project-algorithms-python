@@ -14,11 +14,11 @@ def find_duplicate(nums):
 
 def sort_nums(nums):
     if (not nums) or (len(nums) < 2):
-        raise ValueError("array inválido")
+        raise ValueError("inválido")
 
     for num in nums:
         if type(num) == str or num < 0:
-            raise ValueError("número inválido")
+            raise ValueError("inválido")
 
     merge_sort(nums)
 
